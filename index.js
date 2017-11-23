@@ -7,9 +7,15 @@ function findMatching(arr, name) {
 
 function fuzzyMatch(arr, matchTo) {
   return arr.filter(function(x) {
-    const matchLength = matchTo.length; 
+    const matchLength = matchTo.length;
     if(x.slice(0, matchLength) === matchTo) {
       return x;
     }
+  })
+}
+
+function matchName(arr, name) {
+  return arr.filter(function(x) {
+    
   })
 }
