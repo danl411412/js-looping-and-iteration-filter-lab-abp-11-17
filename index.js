@@ -1,7 +1,6 @@
 // Code your solution in this file
 function findMatching(arr, name) {
-    const filterFunc(x) {
+    return arr.filter(filterFunc(x) {
       return x === name;
-    }
-    return arr.filter(filterFunc(x))
+    })
 }
