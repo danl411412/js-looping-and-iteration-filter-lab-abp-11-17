@@ -5,6 +5,11 @@ function findMatching(arr, name) {
     })
 }
 
-function fuzzyMatch() {
-  
+function fuzzyMatch(arr, matchTo) {
+  return arr.filter(function(x) {
+    const matchLength = matchTo.length; 
+    if(x.slice(0, matchLength) === matchTo) {
+      return x;
+    }
+  })
 }
