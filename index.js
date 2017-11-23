@@ -1,5 +1,5 @@
 // Code your solution in this file
-findingMatching(arr, name) {
+findMatching(arr, name) {
     const filterFunc(x) {
       return x === name;
     }
