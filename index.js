@@ -18,7 +18,7 @@ function matchName(arr, name) {
   return arr.filter(function(x) {
     for(const key in x) {
       console.log(key);
-      if(key === name) {
+      if(x[key] === name) {
         return x;
       }
     }
