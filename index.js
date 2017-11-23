@@ -16,6 +16,10 @@ function fuzzyMatch(arr, matchTo) {
 
 function matchName(arr, name) {
   return arr.filter(function(x) {
-    
+    for(let key in x) {
+      if(key === name) {
+        return key;
+      }
+    }
   })
 }
